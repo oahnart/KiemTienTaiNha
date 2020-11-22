@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: black;
+}
+
+.modal-dialog {
+  margin: 15% auto;
+  width: 400px;
+}
+
+.modal-dialog .modal-title {
+  color: darkcyan;
+  font-weight: 600;
+}
+
+.modal-dialog .modal-body {
+  color: darkslategray;
+  font-weight: 600;
+}
+
+.header {
+  position: relative;
+}
+.header .banner {
+  position: relative;
+  max-width: 100%;
+  height: 820px;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: content-box;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url("./img/ef320418-ea3a-4379-bfa2-284fbdb05a21.jpg");
+  filter: brightness(61%);
+}
+.header .container {
+  position: absolute;
+  left: 50%;
+	margin-left: -480px;
+  top: 0;
+  width: 960px;
+}
+
+.header .container .contact {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 15px;
+}
+
+.header .container .big-title{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(238, 231, 7);
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 40px;
+}
+
+.header .container .hr-header {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header .container .warning {
+  color: red;
+  font-weight: 600;
+}
+
+.header .container .system {
+  color: white;
+}
+
+.header .container .arrow {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
+}
+
+.header .container .arrow #SHAPE212 {
+  width: 109px;
+  height: 109px;
+}
+
+.header .container .arrow .ladi-shape {
+  transform: rotate(89deg);
+  -webkit-transform: rotate(89deg);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.header .container .arrow #SHAPE213 {
+  width: 109px;
+  height: 109px;
+}
+
+.header .container .btn-dowload {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 50px;
+}
+
+.header .container .btn-dowload .btn-android {
+  padding: 15px;
+}
+
+.header .container .btn-dowload .btn-ios {
+  padding: 15px 32px;
+}
+
+.header .container .btn-dowload .item-dowload {
+  padding: 15px 32px;
+  border-radius: 15px;
+  background-color: brown;
+  color: white;
+  animation-name: stretch;
+  animation-duration: 0.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes stretch {
+  from {background-color: red;}
+  to {background-color: yellow;transform: scale(1.1);}
+}
+
+.header .container .hr {
+  width: 450px;
+  margin-top: 70px;
+  border-color: black;
+}
+
+.header .container .note {
+  font-weight: 600;
+}
+
+.header .container .hr-1 {
+  width: 450px;
+  border-color: black;
+}
+
+.header .container .buoc1 {
+  font-weight: 600;
+}

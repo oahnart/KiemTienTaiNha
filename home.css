@@ -1,3 +1,7 @@
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@ body {
 
 .modal-dialog {
   margin: 15% auto;
-  width: 400px;
+  width: 40rem;
 }
 
 .modal-dialog .modal-title {
@@ -20,13 +24,18 @@ body {
   font-weight: 600;
 }
 
+.modal-dialog .modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   position: relative;
 }
 .header .banner {
   position: relative;
   max-width: 100%;
-  height: 820px;
+  height: 82rem;
   background-size: cover;
   background-attachment: scroll;
   background-origin: content-box;
@@ -38,31 +47,31 @@ body {
 .header .container {
   position: absolute;
   left: 50%;
-	margin-left: -480px;
+	margin-left: -48rem;
   top: 0;
-  width: 960px;
+  width: 96rem;
 }
 
 .header .container .contact {
   display: flex;
   justify-content: space-between;
   color: white;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .header .container .big-title{
   font-family: "Open Sans", sans-serif;
   color: rgb(238, 231, 7);
-  font-size: 64px;
+  font-size: 6.4rem;
   font-weight: bold;
   line-height: 1;
-  margin: 0 40px;
+  margin: 0 4rem;
 }
 
 .header .container .hr-header {
-  width: 300px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 30rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .header .container .warning {
@@ -77,12 +86,12 @@ body {
 .header .container .arrow {
   display: flex;
   justify-content: space-between;
-  margin: 0 80px;
+  margin: 0 8rem;
 }
 
 .header .container .arrow #SHAPE212 {
-  width: 109px;
-  height: 109px;
+  width: 10.9rem;
+  height: 10.9rem;
 }
 
 .header .container .arrow .ladi-shape {
@@ -94,27 +103,27 @@ body {
 }
 
 .header .container .arrow #SHAPE213 {
-  width: 109px;
-  height: 109px;
+  width: 10.9rem;
+  height: 10.9rem;
 }
 
 .header .container .btn-dowload {
   display: flex;
   justify-content: space-between;
-  margin: 15px 50px;
+  margin: 1.5rem 5rem;
 }
 
 .header .container .btn-dowload .btn-android {
-  padding: 15px;
+  padding: 1.5rem;
 }
 
 .header .container .btn-dowload .btn-ios {
-  padding: 15px 32px;
+  padding: 1.5rem 3.2rem;
 }
 
 .header .container .btn-dowload .item-dowload {
-  padding: 15px 32px;
-  border-radius: 15px;
+  padding: 1.5rem 3.2rem;
+  border-radius: 1.5rem;
   background-color: brown;
   color: white;
   animation-name: stretch;
@@ -126,14 +135,22 @@ body {
   animation-fill-mode: none;
   animation-play-state: running;
 }
+
+.header .container .btn-dowload .item-dowload-big {
+  padding: 2.5rem 7rem;
+}
+
+.header .container .btn-dowload-big {
+  margin-top: 4rem;
+}
 @keyframes stretch {
   from {background-color: red;}
   to {background-color: yellow;transform: scale(1.1);}
 }
 
 .header .container .hr {
-  width: 450px;
-  margin-top: 70px;
+  width: 45rem;
+  margin-top: 7rem;
   border-color: black;
 }
 
@@ -142,10 +159,88 @@ body {
 }
 
 .header .container .hr-1 {
-  width: 450px;
+  width: 45rem;
   border-color: black;
 }
 
 .header .container .buoc1 {
   font-weight: 600;
+}
+
+.header .container #SHAPE231 {
+  width: 12rem;
+  height: 12rem;
+  top: 19.2rem;
+  left: 33.2rem;
+}
+
+.header .container #SHAPE231 > .ladi-shape {
+  transform: rotate(132deg);
+  -webkit-transform: rotate(132deg);
+}
+
+.header .container #SHAPE230 {
+  width: 12.5rem;
+  height: 12.5rem;
+  top: 19.3rem;
+  left: 48.3rem;
+}
+
+.header .container #SHAPE230 > .ladi-shape {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.header .container .arrow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .container video {
+  width : 90rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+  body {
+    box-sizing: border-box;
+  }
+  .header .container {
+    width: 100rem;
+  }
+  h1 {
+    font-size:4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size:2rem;
+  }
+  h4{
+    font-size:1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 3px;
+  }
+  h1 {
+    font-size:5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size:3rem;
+  }
+  h4{
+    font-size:2rem;
+  }
+  .header .container .btn-dowload .item-dowload {
+    padding: 0;
+  }
 }
